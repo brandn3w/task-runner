@@ -1,0 +1,23 @@
+
+
+.container {
+display: flex;
+
+}
+.w-100{
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.navbar-nav {
+list-style-type: none;
+}
+.btn1{
+    font-size: 18px;
+    radius:5%;
+    border:0;
+    padding: 5px;
+}
