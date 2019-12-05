@@ -1,27 +1,103 @@
 .container {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
-.w-100 {
+.image-holder {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+img {
+  display: center;
   width: 100%;
 }
 
 .navbar {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+  -ms-flex-align: start;
+      align-items: flex-start;
 }
 
-.navbar-nav {
+navbar-nav {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+a.menu-item {
+  display: inline;
+  text-decoration: none;
   list-style-type: none;
 }
 
+ul li {
+  list-style-type: none;
+  display: inline;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex: 3;
+      flex: 3;
+}
+
 .btn1 {
-  font-size: 18px;
-  radius: 5%;
+  font-size: 16px;
+  border-radius: 5%;
   border: 0;
   padding: 5px;
+  background-color: #FFC312;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  position: absolute;
+}
+
+/*Services*/
+.serv-row {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h2 {
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+h2 p {
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.services-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+i {
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: #FFC312;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
