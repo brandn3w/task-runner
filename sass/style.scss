@@ -5,6 +5,7 @@ $coloryel:#FFC312;
     display: flex;
     flex-wrap:wrap;
     flex-direction: column;
+    
 
 }
 
@@ -12,6 +13,7 @@ $coloryel:#FFC312;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 img {
@@ -23,11 +25,11 @@ img {
     display: flex;
     display: inline;
     position: absolute;
+   
 
 }
 navigation ul{
 display: flex;
-
 
 }
 
@@ -61,25 +63,82 @@ display:inline;
 /*Services*/
 .serv-row{
     display: flex;
+    flex-direction: column;
 
 }
-h2{
-    justify-content: center;
+.service-header{
+    text-align: center;
+    margin-top: 72px;
+    
+}
 
-}
-h2 p{
-    justify-content: center;
-}
 .services-container{
     display: flex;
     justify-content: space-around;  
+    margin-bottom: 72px;
+}
+
+.service-name {
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
 }
 i {
-    
+   background-color:#fff;
+   border-style: solid;   
     font-size: 30px;
     width: 60px;
     height: 60px;
-    line-height: 60px;
-    color: $coloryel;
     border-radius: 50%; 
+    border: 3px solid $coloryel;
+    color: $coloryel;
+    
+    text-align: center;
+
+    line-height: 60px;
+    
+    
+    
+}
+p {
+    text-align: center;
+    margin-bottom: 96px;
+
+}
+/*Portfolio*/
+.portfolio{
+    background-color: #ecf0f1;
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapper {
+    display: flex
+
+}
+.portfolio-header, .portfolio-par {
+    text-align: center;
+}
+.holder {
+    margin-top: 96px;
+}
+
+.portfolio-img-holder {
+    display: flex;
+    flex: 0 50%;
+    flex-direction: column;
+
+}
+.port-wrapper {
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+}
+.holder1, .holder2{
+display: flex;
+justify-content: space-around;
+padding: 10px 46px;
+}
+img{    
+    flex: 1 1 30%;
+    padding:10px;
 }

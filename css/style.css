@@ -14,6 +14,7 @@
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+  position: relative;
 }
 
 img {
@@ -69,16 +70,13 @@ a.menu-item {
 .serv-row {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
-h2 {
-  -ms-flex-pack: center;
-      justify-content: center;
-}
-
-h2 p {
-  -ms-flex-pack: center;
-      justify-content: center;
+.service-header {
+  text-align: center;
+  margin-top: 72px;
 }
 
 .services-container {
@@ -86,14 +84,84 @@ h2 p {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 72px;
+}
+
+.service-name {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 i {
+  background-color: #fff;
+  border-style: solid;
   font-size: 30px;
   width: 60px;
   height: 60px;
-  line-height: 60px;
-  color: #FFC312;
   border-radius: 50%;
+  border: 3px solid #FFC312;
+  color: #FFC312;
+  text-align: center;
+  line-height: 60px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 96px;
+}
+
+/*Portfolio*/
+.portfolio {
+  background-color: #ecf0f1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wrapper {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio-header, .portfolio-par {
+  text-align: center;
+}
+
+.holder {
+  margin-top: 96px;
+}
+
+.portfolio-img-holder {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 0 50%;
+      flex: 0 50%;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.port-wrapper {
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.holder1, .holder2 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 46px;
+}
+
+img {
+  -ms-flex: 1 1 30%;
+      flex: 1 1 30%;
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */
