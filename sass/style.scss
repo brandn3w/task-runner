@@ -5,6 +5,7 @@ $coloryel:#FFC312;
     display: flex;
     flex-wrap:wrap;
     flex-direction: column;
+
 }
 
 .image-holder{
@@ -18,26 +19,26 @@ img {
    width: 100%;
 
 }
-
-.navbar{
+.navigation {
     display: flex;
-    align-items: flex-start;
+    display: inline;
+    position: absolute;
+
 }
-navbar-nav{
+navigation ul{
 display: flex;
+
 
 }
 
 a.menu-item {
-    display: inline;
+    display: inline-block;
     text-decoration: none;
    list-style-type: none;
 }
-ul li{
-list-style-type: none;
-display: inline;
-flex-direction: row;
-flex:3;
+.navigation li{
+list-style-type:none;
+display:inline;
 
 }
 .btn1{

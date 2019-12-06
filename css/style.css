@@ -21,31 +21,27 @@ img {
   width: 100%;
 }
 
-.navbar {
+.navigation {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: start;
-      align-items: flex-start;
+  display: inline;
+  position: absolute;
 }
 
-navbar-nav {
+navigation ul {
   display: -ms-flexbox;
   display: flex;
 }
 
 a.menu-item {
-  display: inline;
+  display: inline-block;
   text-decoration: none;
   list-style-type: none;
 }
 
-ul li {
+.navigation li {
   list-style-type: none;
   display: inline;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex: 3;
-      flex: 3;
 }
 
 .btn1 {
