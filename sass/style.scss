@@ -1,14 +1,26 @@
 
 $coloryel:#FFC312;
+$overlay:#34495e;
 $header-font: 'Miriam Libre', sans-serif;
 $text-font: 'Gruppo', cursive;
 
 .container{
     display: flex;
     flex-wrap:wrap;
-    flex-direction: column;
-    
+    flex-direction: column;  
 
+}
+.overlay  {
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 10px;
+ right: 10px;
+max-height: 100%;
+max-width: 100%;
+opacity: 0;
+transition: .5s ease;
+background-color: $overlay;
 }
 
 .image-holder{
@@ -17,11 +29,18 @@ $text-font: 'Gruppo', cursive;
     align-items: center;
     position: relative;
 }
-
+.logo{
+    position: absolute;
+  top: 8px;
+  left: 16px;
+}
 img {
    display: center; 
    width: 100%;
 
+}
+.image-holder:hover .overlay{
+    opacity:40%;
 }
 .navigation {
     display: flex;
@@ -35,7 +54,6 @@ ul {
 display: flex;
 
 }
-
 a.menu-item {
     display: inline-block;
     text-decoration: none;
@@ -58,6 +76,9 @@ display:inline;
     text-decoration: none;
     font-family: $header-font;
     color: #fff;
+}
+.btn1:hover {
+transform: scale(1.2);
 }
 .wrapper{
     display: inline-flex;
@@ -97,6 +118,7 @@ p {
     text-align: center;
     margin-bottom: 46px;
     font-family: $text-font;
+    font-size:20px;
 
 }
 

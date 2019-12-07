@@ -7,6 +7,19 @@
       flex-direction: column;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  max-height: 100%;
+  max-width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #34495e;
+}
+
 .image-holder {
   display: -ms-flexbox;
   display: flex;
@@ -17,9 +30,19 @@
   position: relative;
 }
 
+.logo {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
 img {
   display: center;
   width: 100%;
+}
+
+.image-holder:hover .overlay {
+  opacity: 40%;
 }
 
 .navigation {
@@ -59,6 +82,10 @@ a.menu-item {
   text-decoration: none;
   font-family: "Miriam Libre", sans-serif;
   color: #fff;
+}
+
+.btn1:hover {
+  transform: scale(1.2);
 }
 
 .wrapper {
@@ -107,6 +134,7 @@ p {
   text-align: center;
   margin-bottom: 46px;
   font-family: "Gruppo", cursive;
+  font-size: 20px;
 }
 
 .services-container {
