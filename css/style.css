@@ -41,6 +41,8 @@ a.menu-item {
   text-decoration: none;
   list-style-type: none;
   padding-right: 10px;
+  font-family: "Miriam Libre", sans-serif;
+  color: #fff;
 }
 
 .navigation li {
@@ -52,9 +54,11 @@ a.menu-item {
   font-size: 16px;
   border-radius: 5%;
   border: 0;
-  padding: 5px;
+  padding: 10px 30px;
   background-color: #FFC312;
   text-decoration: none;
+  font-family: "Miriam Libre", sans-serif;
+  color: #fff;
 }
 
 .wrapper {
@@ -67,6 +71,18 @@ a.menu-item {
   -ms-flex-align: center;
       align-items: center;
   position: absolute;
+}
+
+h1 {
+  font-family: "Gruppo", cursive;
+  font-size: 30px;
+  color: #fff;
+}
+
+h2 {
+  font-family: "Miriam Libre", sans-serif;
+  font-size: 30px;
+  color: #fff;
 }
 
 /*Services*/
@@ -82,11 +98,15 @@ a.menu-item {
 .service-header {
   text-align: center;
   margin-top: 72px;
+  font-family: "Miriam Libre", sans-serif;
+  font-size: 30px;
+  color: black;
 }
 
 p {
   text-align: center;
   margin-bottom: 46px;
+  font-family: "Gruppo", cursive;
 }
 
 .services-container {
@@ -105,6 +125,7 @@ p {
   -ms-flex-pack: center;
       justify-content: center;
   text-align: center;
+  font-family: "Gruppo", cursive;
 }
 
 i {
@@ -137,6 +158,10 @@ i {
   display: flex;
 }
 
+h2.portfolio-header {
+  color: black;
+}
+
 .portfolio-header {
   margin-bottom: 5px;
 }
@@ -144,6 +169,7 @@ i {
 .portfolio-par {
   margin-top: 0;
   margin-bottom: 72px;
+  font-size: 20px;
 }
 
 .holder {
@@ -163,6 +189,14 @@ i {
   text-align: center;
   background-color: #fff;
   margin: 0 10px;
+}
+
+h3 {
+  font-family: "Miriam Libre", sans-serif;
+}
+
+h4 {
+  font-family: "Gruppo", cursive;
 }
 
 .holder1, .holder2 {
@@ -194,6 +228,12 @@ img {
   text-align: center;
 }
 
+i.far.fa-copyright {
+  font-size: 12px;
+  color: black;
+  border: none;
+}
+
 .media {
   display: -ms-flexbox;
   display: flex;
@@ -203,7 +243,7 @@ img {
 
 .list-inline {
   list-style-type: none;
-  margin-left: 54px;
+  margin-left: 40px;
   padding-left: 72px;
   padding-top: 20px;
 }
@@ -229,5 +269,6 @@ img {
   font-size: 18px;
   width: 30px;
   height: 30px;
+  margin-right: 7px;
 }
 /*# sourceMappingURL=style.css.map */
