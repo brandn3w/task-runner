@@ -23,12 +23,13 @@ img {
 }
 .navigation {
     display: flex;
-    display: inline;
+    display: inline-block;
     position: absolute;
+
    
 
 }
-navigation ul{
+navigation.ul{
 display: flex;
 
 }
@@ -64,12 +65,17 @@ display:inline;
 .serv-row{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
 }
 .service-header{
     text-align: center;
     margin-top: 72px;
     
+}
+p {
+    text-align: center;
+    margin-bottom: 46px;
 }
 
 .services-container{
@@ -82,42 +88,43 @@ display:inline;
     display:flex; 
     flex-direction: column;
     justify-content: center;
+    text-align: center;
+    
 }
 i {
-   background-color:#fff;
-   border-style: solid;   
-    font-size: 30px;
-    width: 60px;
-    height: 60px;
+   background-color:#fff;  
+    font-size: 27px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%; 
     border: 3px solid $coloryel;
     color: $coloryel;
-    
-    text-align: center;
-
     line-height: 60px;
-    
-    
+    padding-top: 6px;   
+    margin: 0 auto;
     
 }
-p {
-    text-align: center;
-    margin-bottom: 96px;
 
-}
 /*Portfolio*/
 .portfolio{
     background-color: #ecf0f1;
     display: flex;
     flex-wrap: wrap;
+    padding: 84px;
+    justify-content: center;
 }
 .wrapper {
-    display: flex
+    display: flex;   
 
 }
-.portfolio-header, .portfolio-par {
-    text-align: center;
+.portfolio-header{
+    margin-bottom: 5px;
 }
+.portfolio-par{
+    margin-top: 0;
+    margin-bottom: 72px;
+}
+
 .holder {
     margin-top: 96px;
 }
@@ -131,14 +138,58 @@ p {
 .port-wrapper {
     text-align: center;
     background-color: #fff;
-    padding: 10px;
+    margin:0 10px;
 }
 .holder1, .holder2{
 display: flex;
 justify-content: space-around;
-padding: 10px 46px;
+padding: 20px 46px;
 }
 img{    
     flex: 1 1 30%;
-    padding:10px;
+   padding: 0 10px;
+}
+
+/*Footer*/
+.container-footer{
+    display: flex;
+    justify-content: center;
+    
+}
+.copyright{
+    padding-top: 20px;
+    flex:1;
+    text-align: center;
+}
+.media {
+    display: flex;
+    flex:2;
+}
+.list-inline{
+    list-style-type: none;
+    margin-left: 54px;
+    padding-left: 72px;
+    padding-top: 20px;
+    
+}
+.list-inline li{
+    text-decoration: none;
+    display: inline;
+
+}
+.li.list-inline-item{
+    display: inline;
+  cursor: pointer;  
+  text-decoration: none;
+  text-align: center;
+}
+.mediaicon {
+    color: white;
+    background-color: black;
+    border: none;
+    padding-left:7px;
+    padding-top: 7px;
+    font-size: 18px;
+    width:30px;
+    height: 30px;
 }
