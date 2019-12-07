@@ -25,11 +25,11 @@ img {
     display: flex;
     display: inline-block;
     position: absolute;
-
-   
+    top: 8px;
+  right: 16px;
 
 }
-navigation.ul{
+ul {
 display: flex;
 
 }
@@ -38,6 +38,7 @@ a.menu-item {
     display: inline-block;
     text-decoration: none;
    list-style-type: none;
+   padding-right:10px;
 }
 .navigation li{
 list-style-type:none;
