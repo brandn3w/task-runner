@@ -137,6 +137,11 @@ p {
   font-size: 20px;
 }
 
+.service-link {
+  text-decoration: none;
+  color: black;
+}
+
 .services-container {
   display: -ms-flexbox;
   display: flex;
@@ -211,6 +216,8 @@ h2.portfolio-header {
       flex: 0 50%;
   -ms-flex-direction: column;
       flex-direction: column;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .port-wrapper {
@@ -257,9 +264,13 @@ img {
 }
 
 i.far.fa-copyright {
-  font-size: 12px;
+  font-size: 10px;
   color: black;
   border: none;
+}
+
+p.footer-par {
+  font-size: 16px;
 }
 
 .media {
