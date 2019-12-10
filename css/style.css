@@ -27,7 +27,6 @@
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  position: relative;
 }
 
 .logo {
@@ -36,9 +35,10 @@
   left: 16px;
 }
 
-img {
+.background {
   display: center;
-  width: 100%;
+  background-size: cover;
+  height: 100%;
 }
 
 .image-holder:hover .overlay {
