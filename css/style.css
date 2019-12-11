@@ -1,10 +1,15 @@
-.container {
+body {
+  margin: 0;
+}
+
+.hader-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-direction: column;
       flex-direction: column;
+  margin: 0 0;
 }
 
 .overlay {
@@ -20,7 +25,7 @@
   background-color: #34495e;
 }
 
-.image-holder {
+.header-image-holder {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -28,15 +33,17 @@
   -ms-flex-align: center;
       align-items: center;
   position: relative;
+  width: 100%;
 }
 
 .logo {
   position: absolute;
-  top: 15px;
-  left: 100px;
+  top: 36px;
+  left: 124px;
+  size: 150%;
 }
 
-img {
+.background-image {
   display: center;
   width: 100%;
 }
@@ -50,8 +57,8 @@ img {
   display: flex;
   display: inline-block;
   position: absolute;
-  top: 15px;
-  right: 148px;
+  top: 40px;
+  right: 22%;
 }
 
 ul {
@@ -63,9 +70,10 @@ a.menu-item {
   display: inline-block;
   text-decoration: none;
   list-style-type: none;
-  padding-right: 20px;
+  padding-right: 34px;
   font-family: "Miriam Libre", sans-serif;
   color: #fff;
+  font-size: 20px;
 }
 
 .navigation li {
@@ -88,7 +96,7 @@ a.menu-item {
   transform: scale(1.2);
 }
 
-.wrapper {
+.header-wrapper {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-direction: column;
@@ -103,12 +111,13 @@ a.menu-item {
 h1 {
   font-family: "Gruppo", cursive;
   font-size: 40px;
+  font-style: italic;
   color: #fff;
 }
 
 h2 {
   font-family: "Miriam Libre", sans-serif;
-  font-size: 50px;
+  font-size: 80px;
   color: #fff;
 }
 
@@ -187,8 +196,7 @@ i {
 }
 
 .wrapper {
-  display: -ms-flexbox;
-  display: flex;
+  text-align: center;
 }
 
 h2.portfolio-header {
@@ -206,7 +214,7 @@ h2.portfolio-header {
 }
 
 .holder {
-  margin-top: 96px;
+  width: 100%;
 }
 
 .portfolio-img-holder {
@@ -306,8 +314,42 @@ p.footer-par {
   padding-left: 8px;
   padding-top: 7px;
   font-size: 18px;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   margin-right: 7px;
+}
+
+@media (max-width: 767px) {
+  ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    -ms-flex-pack: center;
+        justify-content: center;
+    font-size: 14px;
+  }
+  welcome-header, .welcome-header2 {
+    display: none;
+  }
+  .logo-holder {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: end;
+        align-items: flex-end;
+  }
+  .btn1 {
+    font-size: 10px;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+  }
+  .services-container, .holder1, .holder2, .container-footer {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .container-footer {
+    -ms-grid-column-align: center;
+        justify-items: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
