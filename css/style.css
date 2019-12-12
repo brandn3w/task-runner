@@ -10,6 +10,7 @@ body {
   -ms-flex-direction: column;
       flex-direction: column;
   margin: 0 0;
+  width: 100%;
 }
 
 .overlay {
@@ -40,7 +41,6 @@ body {
   position: absolute;
   top: 36px;
   left: 124px;
-  size: 150%;
 }
 
 .background-image {
@@ -48,7 +48,7 @@ body {
   width: 100%;
 }
 
-.image-holder:hover .overlay {
+.header-container:hover .overlay {
   opacity: 40%;
 }
 
@@ -146,7 +146,8 @@ p {
   font-size: 20px;
 }
 
-.service-link {
+a.service-link {
+  text-align: center;
   text-decoration: none;
   color: black;
 }
@@ -154,9 +155,10 @@ p {
 .services-container {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   margin-bottom: 72px;
+  width: 100%;
 }
 
 .service-name {
@@ -164,10 +166,9 @@ p {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
   text-align: center;
   font-family: "Gruppo", cursive;
+  margin: 0 66px;
 }
 
 i {
@@ -247,13 +248,14 @@ h4 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 20px 46px;
+  padding: 40px 46px;
 }
 
 img {
   -ms-flex: 1 1 30%;
       flex: 1 1 30%;
   padding: 0 10px;
+  max-width: 100%;
 }
 
 /*Footer*/
@@ -307,7 +309,7 @@ p.footer-par {
   text-align: center;
 }
 
-.mediaicon {
+.mediaicon-1, .mediaicon-2, .mediaicon-3, .mediaicon-4 {
   color: white;
   background-color: black;
   border: none;
@@ -317,6 +319,18 @@ p.footer-par {
   width: 32px;
   height: 32px;
   margin-right: 7px;
+}
+
+.mediaicon-2 {
+  padding-left: 11px;
+}
+
+.mediaicon-3 {
+  padding-left: 10px;
+}
+
+.mediaicon-4 {
+  padding-left: 6px;
 }
 
 @media (max-width: 767px) {
