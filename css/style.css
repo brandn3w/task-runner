@@ -221,8 +221,8 @@ h2.portfolio-header {
 .portfolio-img-holder {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex: 0 50%;
-      flex: 0 50%;
+  -ms-flex: 1 1 30%;
+      flex: 1 1 30%;
   -ms-flex-direction: column;
       flex-direction: column;
   max-height: 100%;
@@ -232,7 +232,12 @@ h2.portfolio-header {
 .port-wrapper {
   text-align: center;
   background-color: #fff;
-  margin: 0 10px;
+  max-width: 78%;
+  max-height: 100%;
+  -ms-flex: 1 1 30%;
+      flex: 1 1 30%;
+  margin-left: 47px;
+  margin-right: 0;
 }
 
 h3 {
@@ -246,16 +251,19 @@ h4 {
 .holder1, .holder2 {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   padding: 40px 46px;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
-img {
+.portfolio-image {
   -ms-flex: 1 1 30%;
       flex: 1 1 30%;
-  padding: 0 10px;
-  max-width: 100%;
+  padding-right: 10px;
+  max-width: 80%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*Footer*/

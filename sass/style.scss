@@ -198,16 +198,23 @@ h2.portfolio-header{
 
 .portfolio-img-holder {
     display: flex;
-    flex: 0 50%;
+    flex: 1 1 30%;
     flex-direction: column;
     max-height: 100%;
     max-width: 100%;
+  
+  
 
 }
 .port-wrapper {
     text-align: center;
     background-color: #fff;
-    margin:0 10px;
+   max-width: 78%;
+   max-height: 100%;
+   flex: 1 1 30%;
+   margin-left: 47px;
+   margin-right:0;
+     
 }
 h3{
     font-family: $header-font;
@@ -217,15 +224,21 @@ h4{
 }
 .holder1, .holder2{
 display: flex;
-justify-content: space-around;
 padding: 40px 46px;
+justify-content: center;
+
 
 }
 
-img{    
+.portfolio-image{    
     flex: 1 1 30%;
-   padding: 0 10px;
-   max-width: 100%;  
+    padding-right: 10px;
+   max-width: 80%;  
+   height: 100%;
+   margin-left: auto;
+    margin-right: auto;
+  
+   
 }
 
 /*Footer*/
