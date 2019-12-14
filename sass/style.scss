@@ -45,7 +45,10 @@ background-color: $overlay;
 }
 .background-image {
    display: center; 
-   width: 100%;
+   background-size: cover;
+
+   height: 100%;
+   
 
 }
 .header-container:hover .overlay{
