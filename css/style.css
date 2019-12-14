@@ -234,8 +234,8 @@ h2.portfolio-header {
   background-color: #fff;
   max-width: 78%;
   max-height: 100%;
-  -ms-flex: 1 1 30%;
-      flex: 1 1 30%;
+  -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
   margin-left: 47px;
   margin-right: 0;
 }
@@ -330,11 +330,12 @@ p.footer-par {
 }
 
 .mediaicon-2 {
-  padding-left: 11px;
+  padding-left: 10px;
 }
 
 .mediaicon-3 {
   padding-left: 10px;
+  padding-top: 7px;
 }
 
 .mediaicon-4 {
