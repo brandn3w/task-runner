@@ -283,11 +283,11 @@ p.footer-par {
 padding-left: 3px;
 }
 .mediaicon-2 {
-  padding-left: 3px;
+  padding-left: 2px;
 }
 
 .mediaicon-3 {
-  padding-left: 4px;
+  padding-left: 3px;
   padding-top: 7px;
 }
 
@@ -326,8 +326,6 @@ padding-left: 3px;
     padding: 5px 5px;
   }
   .services-container,
-  .holder1,
-  .holder2,
   .container-footer {
     flex-direction: column;
     justify-content: center;
@@ -339,35 +337,20 @@ padding-left: 3px;
   .portfolio-header {
     font-size: 40px;
   }
-  .portfolio-image {
-    padding: 0;
-    flex: 0 50%;
-  }
-  .port-wrapper {
-    margin-left: 27px;
-    flex: 0 0 20%;
-    justify-content: center;
-    align-content: center;
-    max-width: 80%;
-  }
+
+ 
   .portfolio {
     padding: 0;
     justify-content: center;
   }
 
-  .holder1 {
-    padding-bottom: 0;
-  }
-  .holder2 {
-    padding-top: 0;
   }
   .container-footer {
     justify-items: center;
   }
-}
+
 @media (max-width: 1024px) and (min-width: 357px){
-    ul {
-       
+    ul {       
         justify-content: center;
         font-size: 8px;
       }
@@ -423,20 +406,119 @@ padding-left: 3px;
        width: 80%;
       
       }
-      .port-wrapper {
-        
-        margin-left: 66px;
-
-
+      .container-footer {
+        justify-items: center;
+      }
+    }
+    @media (max-width: 812px) and (min-width: 375px){
+      ul {       
+        justify-content: center;
+        font-size: 8px;
+      }
+      .header-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      div.navigation {
+        display: none;
       }
     
-      .holder1 {
-        padding-bottom: 0;
+      .welcome-header,
+      .welcome-header2 {
+        display: none;
       }
-      .holder2 {
-        padding-top: 0;
+
+      .img.logo {
+        justify-content: center;
+    transform: scale(1,5);
+      }    
+      .btn1 {
+        font-size: 14px;
+        padding: 5px 9px;
+      }
+      .services-container,
+      .holder1,
+      .holder2,
+      .container-footer {
+        flex-direction: column;
+        justify-content: center;
+      }
+    
+      .container {
+        padding: 0;
+      }
+      .portfolio-header {
+        font-size: 40px;
+      }
+ 
+      .portfolio {
+        padding: 0;
+      }
+      .portfolio-image{
+        flex: 0 30%;
+        padding: 0;
+       width: 80%;
+      
       }
       .container-footer {
         justify-items: center;
       }
+
+    }
+      @media (max-width: 640px) and (min-width: 360px){
+      ul {       
+        justify-content: center;
+        font-size: 8px;
+      }
+      .header-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      div.navigation {
+        display: none;
+      }
+    
+      .welcome-header,
+      .welcome-header2 {
+        display: none;
+      }
+
+      .img.logo {
+        justify-content: center;
+    transform: scale(1,5);
+      }    
+      .btn1 {
+        font-size: 14px;
+        padding: 5px 9px;
+      }
+      .services-container,
+      .holder1,
+      .holder2,
+      .container-footer {
+        flex-direction: column;
+        justify-content: center;
+      }
+    
+      .container {
+        padding: 0;
+      }
+      .portfolio-header {
+        font-size: 40px;
+      }
+ 
+      .portfolio {
+        padding: 0;
+      }
+      .portfolio-image{
+        flex: 0 30%;
+        padding: 0;
+       width: 80%;
+      
+      }
+      .container-footer {
+        justify-items: center;
+      }
+
     }
