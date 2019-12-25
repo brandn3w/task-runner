@@ -2,7 +2,7 @@ $coloryel: #ffc312;
 $overlay: #34495e;
 $header-font: "Miriam Libre", sans-serif;
 $text-font: "Gruppo", cursive;
-
+$backgroundfill: #f7f7f7;
 body {
   margin: 0;
 }
@@ -157,7 +157,7 @@ i {
 
 /*Portfolio*/
 .portfolio-container {
-    max-width: 1400px;
+    max-width: 100%;
     min-height: 1200px;
     background-color: #f7f7f7;
     color: black;
@@ -165,10 +165,13 @@ i {
     text-align: center;
     min-height: 570px;
     position: relative;
-    padding: 50px 0;
+    padding: 50px 10px;
   
 }
 
+.row{
+  display: flex;
+}
 
 h2.portfolio-header {
   color: black;
@@ -187,7 +190,7 @@ h2.portfolio-header {
 }
 
 .image-card {
-	width: 80%;
+	width: 75%;
 	height: 390px;
 	background-color: white;
 	margin: 0 auto;
@@ -210,12 +213,6 @@ h2.portfolio-header {
 .img-container {
 	margin-bottom: 30px;
 }
-.holder1,
-.holder2 {
-  display: flex;
-  padding: 40px 46px;
-  justify-content: center;
-}
 
 .portfolio-image {
   flex: 1 1 30%;
@@ -229,6 +226,7 @@ h2.portfolio-header {
 .container-footer {
   display: flex;
   justify-content: center;
+  background-color: $backgroundfill;
 }
 .copyright {
   padding-top: 20px;
@@ -239,6 +237,7 @@ i.far.fa-copyright {
   font-size: 10px;
   color: black;
   border: none;
+  background-color: $backgroundfill;
 }
 
 p.footer-par {
@@ -279,12 +278,16 @@ p.footer-par {
   height: 32px;
   margin-right: 7px;
 }
+
+.mediaicon-1{
+padding-left: 3px;
+}
 .mediaicon-2 {
-  padding-left: 10px;
+  padding-left: 3px;
 }
 
 .mediaicon-3 {
-  padding-left: 10px;
+  padding-left: 4px;
   padding-top: 7px;
 }
 

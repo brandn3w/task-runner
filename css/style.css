@@ -188,7 +188,7 @@ i {
 
 /*Portfolio*/
 .portfolio-container {
-  max-width: 1400px;
+  max-width: 100%;
   min-height: 1200px;
   background-color: #f7f7f7;
   color: black;
@@ -196,7 +196,12 @@ i {
   text-align: center;
   min-height: 570px;
   position: relative;
-  padding: 50px 0;
+  padding: 50px 10px;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
 }
 
 h2.portfolio-header {
@@ -218,7 +223,7 @@ h2.portfolio-header {
 }
 
 .image-card {
-  width: 80%;
+  width: 75%;
   height: 390px;
   background-color: white;
   margin: 0 auto;
@@ -246,15 +251,6 @@ h2.portfolio-header {
   margin-bottom: 30px;
 }
 
-.holder1,
-.holder2 {
-  display: -ms-flexbox;
-  display: flex;
-  padding: 40px 46px;
-  -ms-flex-pack: center;
-      justify-content: center;
-}
-
 .portfolio-image {
   -ms-flex: 1 1 30%;
       flex: 1 1 30%;
@@ -269,6 +265,7 @@ h2.portfolio-header {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  background-color: #f7f7f7;
 }
 
 .copyright {
@@ -282,6 +279,7 @@ i.far.fa-copyright {
   font-size: 10px;
   color: black;
   border: none;
+  background-color: #f7f7f7;
 }
 
 p.footer-par {
@@ -329,12 +327,16 @@ p.footer-par {
   margin-right: 7px;
 }
 
+.mediaicon-1 {
+  padding-left: 3px;
+}
+
 .mediaicon-2 {
-  padding-left: 10px;
+  padding-left: 3px;
 }
 
 .mediaicon-3 {
-  padding-left: 10px;
+  padding-left: 4px;
   padding-top: 7px;
 }
 
