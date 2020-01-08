@@ -1,12 +1,46 @@
+/*Variables*/
+
 $coloryel: #ffc312;
 $overlay: #34495e;
 $header-font: "Miriam Libre", sans-serif;
 $text-font: "Gruppo", cursive;
 $backgroundfill: #f7f7f7;
+
 body {
   margin: 0;
 }
 
+.hamburger {
+ 
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+  }
+ .item {
+    display: block;
+    text-decoration: none;
+    list-style-type: none;
+    padding-right: 34px;
+    font-family: $header-font;
+    color:black;
+    font-size: 20px;
+  }
+  .menu-list li {
+    list-style-type: none;
+    display: none;
+}
+i.fas.fa-bars {
+  color: black;
+  border: none;
+ background: none;
+}
+i.fas.fa-bars:hover + ul.menu-list{
+display: block;
+}
 .header-container {
   display: flex;
   flex-wrap: wrap;
@@ -14,18 +48,7 @@ body {
   margin: 0 0;
   width: 100%;
 }
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 10px;
-  right: 10px;
-  max-height: 100%;
-  max-width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: $overlay;
-}
+
 
 .header-image-holder {
   display: flex;
@@ -423,7 +446,10 @@ padding-left: 3px;
       div.navigation {
         display: none;
       }
-    
+    .hamburger{
+      display: block;
+
+    }
       .welcome-header,
       .welcome-header2 {
         display: none;
@@ -521,4 +547,4 @@ padding-left: 3px;
         justify-items: center;
       }
 
-    }
+  }
