@@ -6,8 +6,8 @@ body {
 .hamburger {
   display: none;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 15px;
+  right: 10px;
 }
 
 .menu-list {
@@ -15,16 +15,20 @@ body {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  padding: 0, 10px;
+  background-color: #f7f7f7;
 }
 
 .item {
   display: block;
   text-decoration: none;
   list-style-type: none;
-  padding-right: 34px;
+  padding: 0 20px;
+  margin: 0 20px;
   font-family: "Miriam Libre", sans-serif;
   color: black;
-  font-size: 20px;
+  font-size: 15px;
+  background-color: #f7f7f7;
 }
 
 .menu-list li {
@@ -33,13 +37,22 @@ body {
 }
 
 i.fas.fa-bars {
-  color: black;
+  color: #f7f7f7;
   border: none;
   background: none;
+  font-size: 28px;
 }
 
-i.fas.fa-bars:hover + ul.menu-list {
+#toggle {
+  display: none;
+}
+
+#toggle:checked ~ .menu-list li {
   display: block;
+}
+
+#menuToggle input:checked ~ ul {
+  transform: none;
 }
 
 .header-container {
@@ -392,13 +405,17 @@ p.footer-par {
   div.navigation {
     display: none;
   }
+  .hamburger {
+    display: block;
+  }
   .welcome-header,
   .welcome-header2 {
     display: none;
   }
   .img.logo {
-    -ms-flex-pack: center;
-        justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .btn1 {
     font-size: 10px;
@@ -577,8 +594,7 @@ p.footer-par {
     display: none;
   }
   .img.logo {
-    -ms-flex-pack: center;
-        justify-content: center;
+    left: 145px;
     transform: scale(1, 5);
   }
   .btn1 {
@@ -612,6 +628,13 @@ p.footer-par {
   .container-footer {
     -ms-grid-column-align: center;
         justify-items: center;
+  }
+}
+
+@media (max-width: 640px) and (min-width: 360px) and (max-width: 320px) {
+  .logo {
+    left: 105px;
+    top: 35px;
   }
 }
 /*# sourceMappingURL=style.css.map */
